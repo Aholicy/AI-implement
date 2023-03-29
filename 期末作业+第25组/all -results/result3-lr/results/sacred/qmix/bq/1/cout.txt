@@ -1,0 +1,1272 @@
+[INFO 05:05:57] pymarl Running command 'my_main'
+[INFO 05:05:57] pymarl Started run with ID "1"
+[DEBUG 05:05:57] pymarl Starting Heartbeat
+[DEBUG 05:05:57] my_main Started
+seed is: 1
+[WARNING 05:05:57] my_main CUDA flag use_cuda was switched OFF automatically because no CUDA devices are available!
+[INFO 05:05:57] my_main Experiment Parameters:
+this is bq hard 0 env
+[INFO 05:05:57] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'n_rnn',
+    'agent_output_type': 'q',
+    'algo_name': 'qmix',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'env': 'bq',
+    'env_args': {   'game_agent_id': 0,
+                    'game_map_id': 0,
+                    'owner': 0},
+    'env_name': 'bq',
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gain': 0.01,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hypernet_embed': 64,
+    'label': 'default_label',
+    'learner': 'nq_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 10000,
+    'lr': 0.0005,
+    'mac': 'n_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix_env=8_adam_td_lambda',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimizer': 'adam',
+    'per_alpha': 0.6,
+    'per_beta': 0.4,
+    'q_lambda': False,
+    'repeat_id': 1,
+    'return_priority': False,
+    'rnn_hidden_dim': 64,
+    'run': 'default',
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_replay': False,
+    'seed': 4051452,
+    'seed_y': 1,
+    't_max': 10050000,
+    'target_update_interval': 200,
+    'td_lambda': 0.6,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'use_cuda': False,
+    'use_layer_norm': False,
+    'use_orthogonal': False,
+    'use_per': False,
+    'use_tensorboard': False}
+
+
+env is ready
+Mixer Size: 
+24.865K
+[INFO 05:06:01] my_main Beginning training for 10050000 timesteps
+/workspace/src/components/episode_buffer.py:109: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1646755903507/work/torch/csrc/utils/tensor_new.cpp:210.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 16.6
+train step 600 train episode_return -12.600000000000009
+/workspace/src/components/episode_buffer.py:109: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 05:06:02] my_main t_env: 600 / 10050000
+[INFO 05:06:02] my_main Estimated time left: 12 minutes, 29 seconds. Time passed: 0 seconds
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 18.2
+reward is: 0.0
+my_color: 0   end_my_blood: 2.0000000000000013   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.0000000000000018   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 2.2000000000000015   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 4.200000000000001   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 1.8000000000000018   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.4000000000000017   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 21.4
+reward is: 0.0
+my_color: 0   end_my_blood: 4.6000000000000005   end_ene_blood: 19.0
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 21.4
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 22.6
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000001   end_ene_blood: 22.6
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 21.8
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.4
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 19.0
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 4.6000000000000005   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 4.200000000000001   end_ene_blood: 17
+test times: 1 test win_rate 0.0 test win_rate2 0.0
+[DEBUG 05:06:24] matplotlib.pyplot Loaded backend agg version v2.2.
+[DEBUG 05:06:24] matplotlib.font_manager findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: score(FontEntry(fname='/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+[DEBUG 05:06:24] matplotlib.font_manager findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+reward is: 0.0
+my_color: 0   end_my_blood: 1.0000000000000013   end_ene_blood: 20.2
+train step 1200 train episode_return -19.2
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.399999999999999
+train step 1551 train episode_return -15.400000000000004
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 18.2
+train step 1874 train episode_return -18.2
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 16.6
+train step 2474 train episode_return -9.600000000000005
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.6
+train step 2749 train episode_return -20.60000000000002
+reward is: -0.3999999999999986
+my_color: 0   end_my_blood: 0   end_ene_blood: 23.8
+train step 3062 train episode_return -23.799999999999997
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.799999999999997
+train step 3410 train episode_return -17.80000000000001
+reward is: -0.1999999999999993
+my_color: 0   end_my_blood: 0   end_ene_blood: 22.6
+train step 3857 train episode_return -22.600000000000012
+reward is: -1.1999999999999993
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.0
+train step 4270 train episode_return -17.00000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 23.4
+train step 4524 train episode_return -23.40000000000001
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.4
+train step 5067 train episode_return -21.400000000000013
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 15.1
+train step 5667 train episode_return -9.899999999999999
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.4
+train step 5889 train episode_return -19.400000000000013
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 19.0
+train step 6489 train episode_return -12.000000000000004
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.5
+train step 6632 train episode_return -17.499999999999996
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 22.4
+train step 6922 train episode_return -22.400000000000023
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 22.6
+train step 7522 train episode_return -17.200000000000006
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.0
+train step 7733 train episode_return -19.000000000000007
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.4
+train step 8005 train episode_return -21.400000000000023
+reward is: -0.8000000000000007
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.0
+train step 8157 train episode_return -18.999999999999996
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 8452 train episode_return -20.200000000000003
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.0
+train step 8633 train episode_return -19.000000000000007
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 9048 train episode_return -20.2
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.0
+train step 9235 train episode_return -19.000000000000007
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.8
+train step 9427 train episode_return -21.799999999999994
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.0
+train step 9795 train episode_return -15.000000000000007
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 10025 train episode_return -20.199999999999996
+[INFO 05:06:35] my_main Recent Stats | t_env:      10025 | Episode:       28
+battle_won_mean:           0.0000	dead_allies_mean:          2.0000	dead_enemies_mean:         0.0000	ep_length_mean:          600.0000
+epsilon:                   1.0000	return_mean:             -12.6000	return_std:                0.0000	test_battle_won_mean:      0.0000
+test_dead_allies_mean:     2.0312	test_dead_enemies_mean:    0.4375	test_ep_length_mean:     583.7188	test_return_mean:        -13.5375
+test_return_std:           2.7868	
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.3
+train step 10279 train episode_return -20.30000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.6
+train step 10476 train episode_return -20.600000000000012
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.0
+train step 10668 train episode_return -19.000000000000018
+[INFO 05:06:36] my_main t_env: 10668 / 10050000
+[INFO 05:06:36] my_main Estimated time left: 9 hours, 23 minutes, 24 seconds. Time passed: 34 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.8
+reward is: 0.0
+my_color: 0   end_my_blood: 8.881784197001252e-16   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 17.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 16.6
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 22.6
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.799999999999997
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.000000000000001   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 18.6
+reward is: 0.0
+my_color: 0   end_my_blood: 3.000000000000001   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.000000000000001   end_ene_blood: 20.2
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.000000000000001   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 23.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 2.8000000000000016   end_ene_blood: 21.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 3.000000000000001   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 20.6
+reward is: 0.0
+my_color: 0   end_my_blood: 3.000000000000001   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 4.600000000000001   end_ene_blood: 22.6
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 15.8
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.4
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 2.2000000000000015   end_ene_blood: 16.6
+test times: 2 test win_rate 0.0 test win_rate2 0.0
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.4
+train step 10843 train episode_return -19.400000000000002
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 22.6
+train step 11055 train episode_return -22.600000000000012
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.8
+train step 11255 train episode_return -19.800000000000015
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 11454 train episode_return -20.200000000000006
+reward is: -1.4000000000000021
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.4
+train step 11585 train episode_return -21.40000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.8
+train step 11732 train episode_return -17.800000000000008
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.8
+train step 11869 train episode_return -17.800000000000008
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 12088 train episode_return -20.199999999999996
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.8
+train step 12270 train episode_return -17.800000000000004
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 12464 train episode_return -20.199999999999996
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.5
+train step 12647 train episode_return -21.499999999999993
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.2
+train step 12791 train episode_return -20.200000000000003
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 22.6
+train step 12997 train episode_return -22.60000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.4
+train step 13220 train episode_return -21.400000000000006
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 13.4
+train step 13476 train episode_return -13.399999999999997
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.4
+train step 14014 train episode_return -19.400000000000016
+reward is: 0.0
+my_color: 0   end_my_blood: 0.40000000000000135   end_ene_blood: 18.2
+train step 14614 train episode_return -17.800000000000015
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 16.6
+train step 14770 train episode_return -16.600000000000012
+reward is: -0.1999999999999993
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.8
+train step 14967 train episode_return -19.80000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 18.2
+train step 15252 train episode_return -18.2
+reward is: 1.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.4
+train step 15534 train episode_return -19.400000000000002
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 19.4
+train step 15867 train episode_return -19.40000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.6
+train step 16409 train episode_return -20.600000000000005
+reward is: 0.0
+my_color: 0   end_my_blood: 3.8000000000000016   end_ene_blood: 12.6
+train step 17009 train episode_return -8.800000000000002
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.399999999999999
+train step 17515 train episode_return -11.400000000000004
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 16.6
+train step 18115 train episode_return -9.600000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 3.4000000000000012   end_ene_blood: 17.0
+train step 18715 train episode_return -13.600000000000009
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 17
+train step 19210 train episode_return -17.000000000000018
+reward is: 0.0
+my_color: 0   end_my_blood: 6.2   end_ene_blood: 14.7
+train step 19810 train episode_return -8.5
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 19.0
+train step 20410 train episode_return -12.0
+[INFO 05:07:29] my_main Recent Stats | t_env:      20410 | Episode:       61
+battle_won_mean:           0.0000	dead_allies_mean:          2.8333	dead_enemies_mean:         0.0000	ep_length_mean:          335.6000
+epsilon:                   0.8010	grad_norm:                 0.5488	loss_td:                   0.0868	q_taken_mean:              0.1183
+return_mean:             -18.7367	return_std:                3.4459	target_mean:               0.0811	td_error_abs:              0.0868
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     2.0312	test_dead_enemies_mean:    0.4062	test_ep_length_mean:     583.5312
+test_return_mean:        -13.3188	test_return_std:           3.2116	
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 18.2
+train step 21010 train episode_return -12.8
+[INFO 05:07:31] my_main t_env: 21010 / 10050000
+[INFO 05:07:31] my_main Estimated time left: 14 hours, 41 minutes, 59 seconds. Time passed: 1 minutes, 29 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 11.799999999999999   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 15.4   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.2
+reward is: 0.0
+my_color: 0   end_my_blood: 13.4   end_ene_blood: 22.6
+reward is: 0.0
+my_color: 0   end_my_blood: 22.2   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 13.100000000000001   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 17   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 21.2
+reward is: 0.0
+my_color: 0   end_my_blood: 23.8   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 7.3999999999999995   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 22.7
+reward is: 0.0
+my_color: 0   end_my_blood: 19.0   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 13.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 12.3
+reward is: 0.0
+my_color: 0   end_my_blood: 10.2   end_ene_blood: 21.1
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 15.4
+reward is: 0.0
+my_color: 0   end_my_blood: 19.0   end_ene_blood: 17.5
+reward is: 0.0
+my_color: 0   end_my_blood: 21.4   end_ene_blood: 23.5
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 25
+reward is: 0
+my_color: 0   end_my_blood: 15   end_ene_blood: 7
+reward is: 0
+my_color: 0   end_my_blood: 25   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 17   end_ene_blood: 23.5
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 16.6
+reward is: 0.0
+my_color: 0   end_my_blood: 12.2   end_ene_blood: 17.8
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 14.600000000000001   end_ene_blood: 22.6
+reward is: 0.0
+my_color: 0   end_my_blood: 9.5   end_ene_blood: 15.5
+reward is: 0.0
+my_color: 0   end_my_blood: 21.0   end_ene_blood: 22.6
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 17.799999999999997
+reward is: -0.6999999999999993
+my_color: 0   end_my_blood: 10.2   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.099999999999998
+reward is: 0
+my_color: 0   end_my_blood: 17   end_ene_blood: 25
+test times: 3 test win_rate 0.125 test win_rate2 0.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 19.9
+train step 21610 train episode_return -12.900000000000002
+reward is: -0.8000000000000007
+my_color: 0   end_my_blood: 7.800000000000001   end_ene_blood: 25
+train step 22210 train episode_return -17.199999999999992
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.8
+train step 22810 train episode_return -8.8
+reward is: 0.0
+my_color: 0   end_my_blood: 6.2   end_ene_blood: 23.0
+train step 23410 train episode_return -16.80000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 12.599999999999998
+train step 24010 train episode_return -5.599999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.799999999999997
+train step 24610 train episode_return -10.799999999999995
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 19.0
+train step 25210 train episode_return -12.0
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 1.0000000000000004   end_ene_blood: 17
+train step 25810 train episode_return -16.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 11.9
+train step 26410 train episode_return -4.9
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.8
+train step 27010 train episode_return -8.8
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 16.299999999999997
+train step 27610 train episode_return -9.299999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 21.4   end_ene_blood: 24.2
+train step 28210 train episode_return -2.8000000000000007
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 13.8
+train step 28810 train episode_return -6.800000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 14.2
+train step 29208 train episode_return -14.200000000000008
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.8
+train step 29808 train episode_return -8.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 6.8   end_ene_blood: 17.4
+train step 30408 train episode_return -10.599999999999994
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 14.600000000000001
+train step 31008 train episode_return -7.600000000000001
+[INFO 05:08:23] my_main Recent Stats | t_env:      31008 | Episode:       79
+battle_won_mean:           0.0000	dead_allies_mean:          2.7742	dead_enemies_mean:         0.1613	ep_length_mean:          333.6129
+epsilon:                   0.6122	grad_norm:                 0.0581	loss_td:                   0.0462	q_taken_mean:              0.0732
+return_mean:             -17.4581	return_std:                4.0352	target_mean:               0.0748	td_error_abs:              0.0462
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     0.9375	test_dead_enemies_mean:    0.3125	test_ep_length_mean:     600.0000
+test_return_mean:         -5.6188	test_return_std:           5.7439	
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+train step 31608 train episode_return -9.999999999999996
+[INFO 05:08:25] my_main t_env: 31608 / 10050000
+[INFO 05:08:25] my_main Estimated time left: 14 hours, 17 minutes, 42 seconds. Time passed: 2 minutes, 23 seconds
+reward is: -1.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.399999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 1.6000000000000008   end_ene_blood: 13.0
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 9.2
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 5.6   end_ene_blood: 4.6000000000000005
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 11.899999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 24.2
+reward is: 0.0
+my_color: 0   end_my_blood: 12.0   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 24.2
+reward is: 0.0
+my_color: 0   end_my_blood: 3.1999999999999993   end_ene_blood: 17.799999999999997
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.4
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 5.6000000000000005   end_ene_blood: 23.4
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 11.4
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 14.0
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 12.200000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.5
+reward is: 0
+my_color: 0   end_my_blood: 25   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 13.799999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 5.6000000000000005   end_ene_blood: 23.0
+reward is: 0.0
+my_color: 0   end_my_blood: 12.7   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 9.6   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 2.200000000000001   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 8.600000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 15.600000000000001   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 1.9999999999999993   end_ene_blood: 5.4
+reward is: 0.0
+my_color: 0   end_my_blood: 16.5   end_ene_blood: 15.399999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 3.1999999999999993   end_ene_blood: 19.099999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 13.8
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 23.4
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 14.600000000000001
+test times: 4 test win_rate 0.125 test win_rate2 0.0
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 11.8
+train step 32208 train episode_return 3.1999999999999993
+reward is: 0.0
+my_color: 0   end_my_blood: 6.2   end_ene_blood: 17
+train step 32808 train episode_return -10.8
+reward is: -0.1999999999999993
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.4
+train step 33212 train episode_return -15.399999999999995
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 17
+train step 33812 train episode_return -11.8
+reward is: 0.0
+my_color: 0   end_my_blood: 5.0   end_ene_blood: 14.6
+train step 34412 train episode_return -9.599999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 16.6
+train step 35012 train episode_return -9.600000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 5.6   end_ene_blood: 8.2
+train step 35612 train episode_return -2.5999999999999988
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 19.0
+train step 36212 train episode_return -12.0
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.399999999999999
+train step 36808 train episode_return -15.400000000000006
+reward is: 0.0
+my_color: 0   end_my_blood: 6.2   end_ene_blood: 20.6
+train step 37408 train episode_return -14.399999999999995
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 11.0
+train step 38008 train episode_return -3.0
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.4
+train step 38563 train episode_return -17.400000000000002
+reward is: -0.09999999999999964
+my_color: 0   end_my_blood: 0   end_ene_blood: 13.100000000000001
+train step 39035 train episode_return -13.099999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 10.3   end_ene_blood: 13.899999999999999
+train step 39635 train episode_return -3.5999999999999996
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 14.3
+train step 40038 train episode_return -14.300000000000004
+reward is: 0.0
+my_color: 0   end_my_blood: 12.0   end_ene_blood: 7.0
+train step 40638 train episode_return 5.0
+reward is: 0.7999999999999972
+my_color: 0   end_my_blood: 0   end_ene_blood: 12.600000000000001
+train step 40995 train episode_return -12.599999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 13.4
+train step 41427 train episode_return -13.399999999999991
+[INFO 05:09:16] my_main Recent Stats | t_env:      41427 | Episode:       98
+battle_won_mean:           0.0000	dead_allies_mean:          1.8889	dead_enemies_mean:         0.4444	ep_length_mean:          588.7778
+epsilon:                   0.4108	grad_norm:                 0.1004	loss_td:                   0.0406	q_taken_mean:              0.0646
+return_mean:             -10.2167	return_std:                3.9603	target_mean:               0.0690	td_error_abs:              0.0406
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     1.7500	test_dead_enemies_mean:    0.7500	test_ep_length_mean:     591.8125
+test_return_mean:         -7.5406	test_return_std:           6.2400	
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 20.6
+train step 42027 train episode_return -2.6000000000000014
+[INFO 05:09:18] my_main t_env: 42027 / 10050000
+[INFO 05:09:18] my_main Estimated time left: 14 hours, 4 minutes, 28 seconds. Time passed: 3 minutes, 16 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 16.2
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 21.1
+reward is: 0.0
+my_color: 0   end_my_blood: 9.899999999999999   end_ene_blood: 7
+reward is: -0.8000000000000007
+my_color: 0   end_my_blood: 0   end_ene_blood: 23.8
+reward is: 0.8000000000000043
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 18.799999999999997
+reward is: -0.10000000000000142
+my_color: 0   end_my_blood: 0   end_ene_blood: 12.600000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 9.399999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 23.8
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 24.2
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.8
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 25
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 17.8   end_ene_blood: 9.0
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 18.6
+reward is: 0.0
+my_color: 0   end_my_blood: 2.6000000000000005   end_ene_blood: 13.0
+reward is: 0
+my_color: 0   end_my_blood: 8   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 22.6   end_ene_blood: 14.2
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 23.8
+reward is: 0.0
+my_color: 0   end_my_blood: 14.600000000000001   end_ene_blood: 21.5
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 21.0
+reward is: -0.40000000000000036
+my_color: 0   end_my_blood: 0   end_ene_blood: 13.8
+reward is: 0.0
+my_color: 0   end_my_blood: 6.2   end_ene_blood: 16.6
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 17.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.0
+reward is: 0.0
+my_color: 0   end_my_blood: 2.200000000000001   end_ene_blood: 16.2
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 23.4
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 21.8
+reward is: 0.0
+my_color: 0   end_my_blood: 10.8   end_ene_blood: 17.8
+reward is: 0.0
+my_color: 0   end_my_blood: 4.6000000000000005   end_ene_blood: 11.200000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 16.2
+reward is: -1.1999999999999993
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.7
+test times: 5 test win_rate 0.15625 test win_rate2 0.0
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 22.599999999999998
+train step 42627 train episode_return -4.599999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 18.3
+train step 43227 train episode_return -11.3
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15
+train step 43827 train episode_return -7.9999999999999964
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+train step 44427 train episode_return -9.999999999999996
+reward is: -0.40000000000000036
+my_color: 0   end_my_blood: 0   end_ene_blood: 10.600000000000001
+train step 44780 train episode_return -10.600000000000005
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 24.2
+train step 45161 train episode_return -24.199999999999996
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.8
+train step 45648 train episode_return -11.800000000000004
+reward is: -0.20000000000000284
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.200000000000003
+train step 46176 train episode_return -20.200000000000014
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 24.2
+train step 46776 train episode_return 0.8000000000000007
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 15.8
+train step 47376 train episode_return -0.8000000000000007
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 4.600000000000001
+train step 47958 train episode_return -4.600000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 23.8   end_ene_blood: 22.599999999999998
+train step 48558 train episode_return 1.2000000000000028
+reward is: 0.0
+my_color: 0   end_my_blood: 13.2   end_ene_blood: 20.299999999999997
+train step 49158 train episode_return -7.100000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 17
+train step 49606 train episode_return -17.000000000000007
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 14.3
+train step 50206 train episode_return -7.299999999999997
+reward is: -1.7763568394002505e-15
+my_color: 0   end_my_blood: 0   end_ene_blood: 9.8
+train step 50776 train episode_return -9.80000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 19.6   end_ene_blood: 17
+train step 51376 train episode_return 2.6000000000000014
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 24.2
+train step 51976 train episode_return -6.199999999999999
+[INFO 05:10:05] my_main Recent Stats | t_env:      51976 | Episode:      117
+battle_won_mean:           0.0000	dead_allies_mean:          2.1579	dead_enemies_mean:         0.6842	ep_length_mean:          548.3684
+epsilon:                   0.2129	grad_norm:                 0.0498	loss_td:                   0.0349	q_taken_mean:              0.0801
+return_mean:              -9.1263	return_std:                6.3713	target_mean:               0.0782	td_error_abs:              0.0349
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     1.8750	test_dead_enemies_mean:    0.4062	test_ep_length_mean:     574.4062
+test_return_mean:        -10.2750	test_return_std:           8.6111	
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 14.2
+train step 52534 train episode_return -14.200000000000006
+[INFO 05:10:06] my_main t_env: 52534 / 10050000
+[INFO 05:10:06] my_main Estimated time left: 12 hours, 42 minutes, 5 seconds. Time passed: 4 minutes, 4 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 24.2
+reward is: -0.39999999999999947
+my_color: 0   end_my_blood: 0   end_ene_blood: 7.000000000000002
+reward is: 0
+my_color: 0   end_my_blood: 15   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 21.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 14.599999999999998   end_ene_blood: 21.0
+reward is: 0.0
+my_color: 0   end_my_blood: 17.8   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 16.2
+reward is: 0.0
+my_color: 0   end_my_blood: 17.8   end_ene_blood: 17.0
+reward is: 0.7999999999999989
+my_color: 0   end_my_blood: 23.4   end_ene_blood: 9.8
+reward is: 0.0
+my_color: 0   end_my_blood: 18.400000000000002   end_ene_blood: 13.4
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 10.2
+reward is: 0
+my_color: 0   end_my_blood: 25   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 20.2   end_ene_blood: 14.2
+reward is: 0.0
+my_color: 0   end_my_blood: 22.0   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 12.6   end_ene_blood: 14.3
+reward is: 0.0
+my_color: 0   end_my_blood: 16.8   end_ene_blood: 16.799999999999997
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 25
+reward is: -0.5
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.799999999999997
+reward is: -0.5
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.1
+reward is: 0.0
+my_color: 0   end_my_blood: 10   end_ene_blood: 19.099999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 21.099999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 4.6000000000000005   end_ene_blood: 18.2
+reward is: 0.0
+my_color: 0   end_my_blood: 13.2   end_ene_blood: 10.200000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 11.1   end_ene_blood: 15.8
+reward is: 0
+my_color: 0   end_my_blood: 18   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 13.8
+reward is: 0.0
+my_color: 0   end_my_blood: 24.2   end_ene_blood: 16.2
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 24.2
+reward is: 0.0
+my_color: 0   end_my_blood: 19.0   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 25   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 13.8
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 13.799999999999999
+test times: 6 test win_rate 0.46875 test win_rate2 0.0
+reward is: 0.0
+my_color: 0   end_my_blood: 11.400000000000002   end_ene_blood: 21.1
+train step 53134 train episode_return -9.7
+reward is: 0.0
+my_color: 0   end_my_blood: 1.1999999999999993   end_ene_blood: 10.7
+train step 53734 train episode_return -9.499999999999993
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 11.399999999999999
+train step 54334 train episode_return -4.399999999999999
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.1
+train step 54695 train episode_return -15.100000000000003
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 18.2
+train step 55161 train episode_return -18.20000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 14.2   end_ene_blood: 21.0
+train step 55761 train episode_return -6.800000000000001
+reward is: -1.7763568394002505e-15
+my_color: 0   end_my_blood: 0   end_ene_blood: 14.200000000000001
+train step 56123 train episode_return -14.200000000000003
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.099999999999998
+train step 56476 train episode_return -17.1
+reward is: 0.0
+my_color: 0   end_my_blood: 0   end_ene_blood: 25
+train step 56721 train episode_return -24.999999999999996
+reward is: 0.0
+my_color: 0   end_my_blood: 12.8   end_ene_blood: 13.4
+train step 57321 train episode_return -0.5999999999999996
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 16.3
+train step 57921 train episode_return -9.3
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.0
+train step 58410 train episode_return -10.999999999999996
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 17
+train step 58625 train episode_return -17.000000000000004
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 12.2
+train step 59225 train episode_return -5.199999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 22.6
+train step 59825 train episode_return -15.600000000000005
+reward is: 0.0
+my_color: 0   end_my_blood: 3.8000000000000007   end_ene_blood: 15
+train step 60425 train episode_return -11.200000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 13.8
+train step 61025 train episode_return -6.800000000000001
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.399999999999999
+train step 61502 train episode_return -15.400000000000006
+reward is: 0.0
+my_color: 0   end_my_blood: 2.0   end_ene_blood: 17.0
+train step 62102 train episode_return -15.000000000000018
+[INFO 05:10:55] my_main Recent Stats | t_env:      62102 | Episode:      137
+battle_won_mean:           0.0000	dead_allies_mean:          1.8947	dead_enemies_mean:         0.5263	ep_length_mean:          553.0000
+epsilon:                   0.0500	grad_norm:                 0.0896	loss_td:                   0.0343	q_taken_mean:              0.0833
+return_mean:              -8.5842	return_std:                6.9491	target_mean:               0.0870	td_error_abs:              0.0343
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     1.0312	test_dead_enemies_mean:    0.5625	test_ep_length_mean:     579.2812
+test_return_mean:         -1.9469	test_return_std:           9.4651	
+reward is: -0.7999999999999989
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.5
+train step 62579 train episode_return -15.499999999999984
+[INFO 05:10:56] my_main t_env: 62579 / 10050000
+[INFO 05:10:56] my_main Estimated time left: 13 hours, 52 minutes, 22 seconds. Time passed: 4 minutes, 54 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 4.400000000000001   end_ene_blood: 7.2
+reward is: 0.0
+my_color: 0   end_my_blood: 24.2   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 12.2
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.4
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 16.6
+reward is: 0.0
+my_color: 0   end_my_blood: 16.3   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 22.6   end_ene_blood: 21.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 8.600000000000001   end_ene_blood: 8
+reward is: -1.1999999999999993
+my_color: 0   end_my_blood: 19.0   end_ene_blood: 15.299999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 15.600000000000001   end_ene_blood: 12.399999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 24.2
+reward is: 0.0
+my_color: 0   end_my_blood: 15.7   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 12.2
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 10.200000000000001   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 10.5   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 13.8   end_ene_blood: 7
+reward is: 0.7999999999999989
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.8
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 24.2
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 12.599999999999998
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 11.1
+reward is: 0.0
+my_color: 0   end_my_blood: 20.2   end_ene_blood: 25
+reward is: 0.5000000000000018
+my_color: 0   end_my_blood: 4.600000000000001   end_ene_blood: 9.399999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15.399999999999999
+reward is: -0.40000000000000036
+my_color: 0   end_my_blood: 0   end_ene_blood: 10.200000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 2.200000000000001   end_ene_blood: 11.8
+reward is: 0.0
+my_color: 0   end_my_blood: 15.4   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 8.600000000000001   end_ene_blood: 9.2
+reward is: -1.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 13.799999999999999
+reward is: 0
+my_color: 0   end_my_blood: 8   end_ene_blood: 8
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 15.4
+test times: 7 test win_rate 0.3125 test win_rate2 0.0
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 17.0
+train step 63179 train episode_return -12.999999999999996
+reward is: 0.0
+my_color: 0   end_my_blood: 2.8000000000000016   end_ene_blood: 15.399999999999999
+train step 63779 train episode_return -12.599999999999994
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 23.5
+train step 64379 train episode_return -16.499999999999993
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 17.9
+train step 64979 train episode_return -12.100000000000005
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 15.8
+train step 65579 train episode_return -10.40000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 15
+train step 66179 train episode_return -9.2
+reward is: -0.5
+my_color: 0   end_my_blood: 0   end_ene_blood: 15
+train step 66508 train episode_return -15.0
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 13.1
+train step 67108 train episode_return -7.899999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 3.8000000000000007   end_ene_blood: 21.4
+train step 67708 train episode_return -17.6
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 15
+train step 68308 train episode_return -8.0
+reward is: -0.09999999999999964
+my_color: 0   end_my_blood: 0   end_ene_blood: 7.800000000000001
+train step 68835 train episode_return -7.799999999999998
+reward is: -0.5
+my_color: 0   end_my_blood: 0   end_ene_blood: 15
+train step 69266 train episode_return -15.000000000000002
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 9.8
+train step 69866 train episode_return -1.8000000000000007
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 16.6
+train step 70153 train episode_return -16.600000000000023
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.6
+train step 70587 train episode_return -20.6
+reward is: -0.8000000000000007
+my_color: 0   end_my_blood: 0   end_ene_blood: 20.6
+train step 71010 train episode_return -20.600000000000012
+reward is: -3.552713678800501e-15
+my_color: 0   end_my_blood: 0   end_ene_blood: 16.2
+train step 71578 train episode_return -16.200000000000006
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.8
+train step 71962 train episode_return -17.800000000000015
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 21.4
+train step 72562 train episode_return -14.400000000000002
+[INFO 05:11:46] my_main Recent Stats | t_env:      72562 | Episode:      157
+battle_won_mean:           0.0000	dead_allies_mean:          2.3000	dead_enemies_mean:         0.4500	ep_length_mean:          502.2500
+epsilon:                   0.0500	grad_norm:                 0.0726	loss_td:                   0.0275	q_taken_mean:              0.0697
+return_mean:             -12.1300	return_std:                5.5984	target_mean:               0.0710	td_error_abs:              0.0275
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     1.2500	test_dead_enemies_mean:    0.8750	test_ep_length_mean:     583.4375
+test_return_mean:         -2.5719	test_return_std:           6.4180	
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 21.0
+train step 72834 train episode_return -21.000000000000004
+[INFO 05:11:47] my_main t_env: 72834 / 10050000
+[INFO 05:11:47] my_main Estimated time left: 13 hours, 51 minutes, 32 seconds. Time passed: 5 minutes, 46 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 14.2
+reward is: 0.0
+my_color: 0   end_my_blood: 15.600000000000001   end_ene_blood: 15.4
+reward is: -0.20000000000000107
+my_color: 0   end_my_blood: 0   end_ene_blood: 14.600000000000001
+reward is: -0.09999999999999787
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.799999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 2.4000000000000012   end_ene_blood: 11.399999999999999
+reward is: -1.7763568394002505e-15
+my_color: 0   end_my_blood: 0   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 13.200000000000001   end_ene_blood: 15.399999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 18   end_ene_blood: 18.6
+reward is: 0.0
+my_color: 0   end_my_blood: 14.399999999999999   end_ene_blood: 23.5
+reward is: 0.0
+my_color: 0   end_my_blood: 20.8   end_ene_blood: 13.799999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 9.5
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 22.599999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 3.8000000000000007   end_ene_blood: 14.2
+reward is: 0.0
+my_color: 0   end_my_blood: 1.100000000000001   end_ene_blood: 10.799999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 1.400000000000001   end_ene_blood: 10.000000000000002
+reward is: 0.0
+my_color: 0   end_my_blood: 3.8000000000000007   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 9.9
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 14.600000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 10   end_ene_blood: 21.0
+reward is: -0.40000000000000213
+my_color: 0   end_my_blood: 0   end_ene_blood: 17.0
+reward is: -0.7999999999999989
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.2
+reward is: -0.5
+my_color: 0   end_my_blood: 0   end_ene_blood: 16.7
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 24.2
+reward is: 0.0
+my_color: 0   end_my_blood: 7.000000000000001   end_ene_blood: 8
+reward is: 0.0
+my_color: 0   end_my_blood: 21.700000000000003   end_ene_blood: 22.599999999999998
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 10.3
+reward is: 0.0
+my_color: 0   end_my_blood: 6.661338147750939e-16   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 6.8000000000000025   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 13.5   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 0.600000000000001   end_ene_blood: 12.2
+reward is: -0.20000000000000107
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.9
+reward is: 0.0
+my_color: 0   end_my_blood: 12.0   end_ene_blood: 19.9
+test times: 8 test win_rate 0.09375 test win_rate2 0.0
+reward is: 0.0
+my_color: 0   end_my_blood: 2.400000000000002   end_ene_blood: 17.0
+train step 73434 train episode_return -14.59999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 13.100000000000001
+train step 74034 train episode_return -6.100000000000003
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 14.2
+train step 74494 train episode_return -14.200000000000006
+reward is: 0.0
+my_color: 0   end_my_blood: 7.8   end_ene_blood: 20.6
+train step 75094 train episode_return -12.8
+reward is: 0.0
+my_color: 0   end_my_blood: 25   end_ene_blood: 21.799999999999997
+train step 75694 train episode_return 3.200000000000003
+reward is: 0.0
+my_color: 0   end_my_blood: 18.400000000000002   end_ene_blood: 14.2
+train step 76294 train episode_return 4.200000000000003
+reward is: 0.0
+my_color: 0   end_my_blood: 10.8   end_ene_blood: 11.8
+train step 76894 train episode_return -1.0
+reward is: -0.8000000000000007
+my_color: 0   end_my_blood: 16.4   end_ene_blood: 15.400000000000002
+train step 77494 train episode_return 0.9999999999999964
+reward is: 0.0
+my_color: 0   end_my_blood: 6.1000000000000005   end_ene_blood: 15.8
+train step 78094 train episode_return -9.7
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 11.399999999999999
+train step 78477 train episode_return -11.400000000000002
+reward is: 0.0
+my_color: 0   end_my_blood: 4.0   end_ene_blood: 12.600000000000001
+train step 79077 train episode_return -8.600000000000003
+reward is: 0.0
+my_color: 0   end_my_blood: 17   end_ene_blood: 22.7
+train step 79677 train episode_return -5.699999999999999
+reward is: -1.7763568394002505e-15
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.4
+train step 80185 train episode_return -15.399999999999997
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 15.8
+train step 80785 train episode_return -9.999999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 3.4000000000000017   end_ene_blood: 16.7
+train step 81385 train episode_return -13.299999999999994
+reward is: 0.0
+my_color: 0   end_my_blood: 6.2   end_ene_blood: 17.8
+train step 81985 train episode_return -11.599999999999994
+reward is: 0.0
+my_color: 0   end_my_blood: 3.200000000000001   end_ene_blood: 21.4
+train step 82585 train episode_return -18.20000000000001
+[INFO 05:12:33] my_main Recent Stats | t_env:      82585 | Episode:      175
+battle_won_mean:           0.0000	dead_allies_mean:          2.4500	dead_enemies_mean:         0.3000	ep_length_mean:          512.7500
+epsilon:                   0.0500	grad_norm:                 0.0754	loss_td:                   0.0291	q_taken_mean:              0.0831
+return_mean:             -13.7050	return_std:                4.9237	target_mean:               0.0793	td_error_abs:              0.0291
+test_battle_won_mean:      0.0000	test_dead_allies_mean:     1.7812	test_dead_enemies_mean:    0.5938	test_ep_length_mean:     552.0312
+test_return_mean:         -7.7000	test_return_std:           6.1943	
+reward is: 0.0
+my_color: 0   end_my_blood: 8   end_ene_blood: 16.6
+train step 83185 train episode_return -8.600000000000001
+[INFO 05:12:35] my_main t_env: 83185 / 10050000
+[INFO 05:12:35] my_main Estimated time left: 12 hours, 43 minutes, 7 seconds. Time passed: 6 minutes, 33 seconds
+reward is: 0.0
+my_color: 0   end_my_blood: 1.400000000000001   end_ene_blood: 12.2
+reward is: 0.0
+my_color: 0   end_my_blood: 23.200000000000003   end_ene_blood: 23.4
+reward is: 0
+my_color: 0   end_my_blood: 15   end_ene_blood: 15
+reward is: 0.0
+my_color: 0   end_my_blood: 15   end_ene_blood: 8.999999999999998
+reward is: 0.0
+my_color: 0   end_my_blood: 17.6   end_ene_blood: 15
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 0   end_ene_blood: 23.0
+reward is: 0.0
+my_color: 0   end_my_blood: 14.600000000000001   end_ene_blood: 21.0
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 20.299999999999997
+reward is: -8.881784197001252e-16
+my_color: 0   end_my_blood: 0   end_ene_blood: 7.500000000000001
+reward is: -0.8000000000000007
+my_color: 0   end_my_blood: 0   end_ene_blood: 15.100000000000001
+reward is: 0.0
+my_color: 0   end_my_blood: 10.2   end_ene_blood: 7.2
+reward is: 0.0
+my_color: 0   end_my_blood: 2.0000000000000013   end_ene_blood: 17.5
+reward is: 0
+my_color: 0   end_my_blood: 18   end_ene_blood: 25
+reward is: 0.0
+my_color: 0   end_my_blood: 13.600000000000001   end_ene_blood: 7
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 11.899999999999999
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17.0
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000001   end_ene_blood: 12.2

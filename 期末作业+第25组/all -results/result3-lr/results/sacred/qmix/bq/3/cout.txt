@@ -1,0 +1,125 @@
+[INFO 06:23:57] pymarl Running command 'my_main'
+[INFO 06:23:57] pymarl Started run with ID "3"
+seed is: 1
+this is bq hard 0 env
+[DEBUG 06:23:57] pymarl Starting Heartbeat
+[DEBUG 06:23:57] my_main Started
+[WARNING 06:23:57] my_main CUDA flag use_cuda was switched OFF automatically because no CUDA devices are available!
+[INFO 06:23:57] my_main Experiment Parameters:
+[INFO 06:23:57] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'n_rnn',
+    'agent_output_type': 'q',
+    'algo_name': 'qmix',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'env': 'bq',
+    'env_args': {   'game_agent_id': 0,
+                    'game_map_id': 0,
+                    'owner': 0},
+    'env_name': 'bq',
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gain': 0.01,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hypernet_embed': 64,
+    'label': 'default_label',
+    'learner': 'nq_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 10000,
+    'lr': 0.0005,
+    'mac': 'n_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix_env=8_adam_td_lambda',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimizer': 'adam',
+    'per_alpha': 0.6,
+    'per_beta': 0.4,
+    'q_lambda': False,
+    'repeat_id': 1,
+    'return_priority': False,
+    'rnn_hidden_dim': 64,
+    'run': 'default',
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_replay': False,
+    'seed': 466568246,
+    'seed_y': 1,
+    't_max': 10050000,
+    'target_update_interval': 200,
+    'td_lambda': 0.6,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'use_cuda': False,
+    'use_layer_norm': False,
+    'use_orthogonal': False,
+    'use_per': False,
+    'use_tensorboard': False}
+
+
+env is ready
+Mixer Size: 
+24.865K
+[INFO 06:24:01] my_main Beginning training for 10050000 timesteps
+/workspace/src/components/episode_buffer.py:109: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1646755903507/work/torch/csrc/utils/tensor_new.cpp:210.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+reward is: -0.6000000000000014
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 16.6
+train step 600 train episode_return -12.600000000000009
+/workspace/src/components/episode_buffer.py:109: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 06:24:02] my_main t_env: 600 / 10050000
+[INFO 06:24:02] my_main Estimated time left: 12 minutes, 0 seconds. Time passed: 0 seconds
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 18.2
+reward is: 0.0
+my_color: 0   end_my_blood: 2.0000000000000013   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 5.200000000000001   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.0000000000000018   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 6.4   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 2.2000000000000015   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 7   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 4.200000000000001   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 1.8000000000000018   end_ene_blood: 19.0
+reward is: 0.0
+my_color: 0   end_my_blood: 5.800000000000001   end_ene_blood: 17
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 4.000000000000002   end_ene_blood: 17
+reward is: 0.0
+my_color: 0   end_my_blood: 3.4000000000000017   end_ene_blood: 20.2
+reward is: 0.0
+my_color: 0   end_my_blood: 5.4   end_ene_blood: 21.4
+reward is: 0.0
+my_color: 0   end_my_blood: 4.6000000000000005   end_ene_blood: 19.0
+reward is: 0
+my_color: 0   end_my_blood: 7   end_ene_blood: 17
